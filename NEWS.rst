@@ -8,6 +8,11 @@ Latest
 ------
 * tbd
 
+2.0.0
+-----
+Major: Upgrade to Black-22
+Major: Upgrade actions/checkout to v3
+
 1.0.0
 -----
 * Major: Initital release.

@@ -7,8 +7,8 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - container: ghcr.io/steinwurf/black-21:1.0.0
-            name: Black 21
+          - container: ghcr.io/steinwurf/black-22:1.0.0
+            name: Black 22
     runs-on: [self-hosted, docker, builder]
     name: ${{ matrix.config.name }}
     container:
@@ -18,6 +18,6 @@ jobs:
         - /home/buildbot/.ssh:/root/.ssh
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Black Check
         run: black . --check

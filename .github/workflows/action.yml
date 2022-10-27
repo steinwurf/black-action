@@ -7,7 +7,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - container: ghcr.io/steinwurf/black-22:latest
+          - container: ghcr.io/steinwurf/black-22:1.0.0
             name: Black 22
     runs-on: [self-hosted, docker, builder]
     name: ${{ matrix.config.name }}
